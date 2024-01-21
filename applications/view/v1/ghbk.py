@@ -2,7 +2,7 @@ import applications.common.utils.helper as helper
 
 from flask import Blueprint
 
-# 创建名为 'index' 的蓝图，URL 前缀为 '/'
+# 创建名为 'ghbk' 的蓝图，URL 前缀为 '/ghbk'
 bp = Blueprint('ghbk', __name__, url_prefix='/ghbk')
 
 # 果核剥壳

@@ -1,15 +1,13 @@
 import glob
-import os
 import re
 import time
 import requests
 import datetime
 import json
+from lxml import etree
 import random
+import os
 import urllib3
-
-from xml import etree
-from flask import Flask, render_template, request, jsonify
 
 
 
@@ -166,3 +164,22 @@ def end_json_data(json_data, data_list, filename):
         filename = filename_prefix + str(int(time.time())) + ".data"
         write_file("static/data/" + filename, data)
     return data
+
+# 历史上的今天
+def get_history_data(filename, curr_month, curr_day):
+    filename_re = filename.replace("*", "(.*?)")
+    file_names = glob.glob(
+        'static/data/' + filename)
+    file_names_len = len(file_names)
+    if file_names_len == 1:
+        # 获取文件名及路径
+        file_name = file_names[0]
+        # 获取文件名中的unix 时间戳
+        old_timestamp = int(re.findall(filename_re, file_name)[0])
+        # 将unix时间戳转换为datetime对象
+        old_timestamp_datetime_obj = datetime.datetime.fromtimestamp(int(old_timestamp))
+        if curr_month == old_timestamp_datetime_obj.month and curr_day == old_timestamp_datetime_obj.day:
+            return read_file(file_name)
+        else:
+            del_file(file_name)
+    return None
