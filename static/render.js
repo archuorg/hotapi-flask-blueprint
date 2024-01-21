@@ -16,7 +16,7 @@ function render(elem_name, limit_num) {
         var flow = layui.flow;
 
         flow.load({
-            elem: "#" + elem_name, // 指定列表容器
+            url: api_hot + elem_name + "/",    // 指定列表容器
             end: "没有更多了",
             scrollElem: "#" + elem_name + "card", // 滚动条元素
             mb: 30,
