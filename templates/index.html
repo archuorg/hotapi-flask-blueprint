@@ -91,6 +91,121 @@
 <div style="padding: 15px; background-color: #F2F2F2;">
     <div class="layui-fluid">
         <div class="layui-row layui-col-space10">
+            <!-- 今日头条 -->
+            <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/toutiao.png">
+                  <font size="3" color="#393D49"><b> 今日头条</b></font>
+                </div>
+                <div class="layui-card-body" id="toutiaocard">
+                  <ul id="toutiao"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 腾讯新闻 -->
+            <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/txnews.png">
+                  <font size="3" color="#393D49"><b> 腾讯新闻</b></font>
+                </div>
+                <div class="layui-card-body" id="txnewscard">
+                  <ul id="txnews"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 网易新闻 -->
+            <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/neteasenews.png">
+                  <font size="3" color="#393D49"><b> 网易新闻</b></font>
+                </div>
+                <div class="layui-card-body" id="neteasenewscard">
+                  <ul id="neteasenews"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 网易新闻 -->
+            <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/thepaper.png">
+                  <font size="3" color="#393D49"><b> 澎湃新闻</b></font>
+                </div>
+                <div class="layui-card-body" id="thepapercard">
+                  <ul id="thepaper"></ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 第三行 -->
+<div style="padding: 15px; background-color: #F2F2F2;">
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+         <!-- 36氪人气榜 -->
+          <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/36kr.png">
+                  <font size="3" color="#393D49"><b> 36氪人气榜</b></font>
+                </div>
+                <div class="layui-card-body" id = "krrenqicard">
+                  <ul id="krrenqi"></ul>
+                </div>
+              </div>
+          </div>
+          <!-- ithome -->
+          <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/ithome.png">
+                  <font size="3" color="#393D49"><b> ithome</b></font>
+                </div>
+                <div class="layui-card-body" id = "ithomecard">
+                  <ul id="ithome"></ul>
+                </div>
+              </div>
+          </div>
+
+          <!-- 稀土掘金 -->
+          <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/juejin.png">
+                  <font size="3" color="#393D49"><b> 稀土掘金</b></font>
+                </div>
+                <div class="layui-card-body" id = "juejincard">
+                  <ul id="juejin"></ul>
+                </div>
+              </div>
+          </div>
+
+          <!-- 少数派 -->
+          <div class="layui-col-md3">
+              <div class="layui-card">
+                <div class="layui-card-header">
+                  <img class="sm-img" src="/static/img/sspai.png">
+                  <font size="3" color="#393D49"><b> 少数派</b></font>
+                </div>
+                <div class="layui-card-body" id = "3sspaicard">
+                  <ul id="sspai"></ul>
+                </div>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- 第四行 -->
+<div style="padding: 15px; background-color: #F2F2F2;">
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space10">
             <!-- CSDN热榜 -->
             <div class="layui-col-md3">
               <div class="layui-card">
@@ -142,64 +257,7 @@
         </div>
     </div>
 </div>
-<!-- 第三行 -->
-<div style="padding: 15px; background-color: #F2F2F2;">
-  <div class="layui-fluid">
-    <div class="layui-row layui-col-space10">
-         <!-- 36氪人气榜 -->
-          <div class="layui-col-md3">
-              <div class="layui-card">
-                <div class="layui-card-header">
-                  <img class="sm-img" src="/static/img/36kr.png">
-                  <font size="3" color="#393D49"><b> 36氪人气榜</b></font>
-                </div>
-                <div class="layui-card-body" id = "krrenqicard">
-                  <ul id="krrenqi"></ul>
-                </div>
-              </div>
-          </div>
-          <!-- ithome -->
-          <div class="layui-col-md3">
-              <div class="layui-card">
-                <div class="layui-card-header">
-                  <img class="sm-img" src="/static/img/ithome.png">
-                  <font size="3" color="#393D49"><b> ithome</b></font>
-                </div>
-                <div class="layui-card-body" id = "ithomecard">
-                  <ul id="ithome"></ul>
-                </div>
-              </div>
-          </div>
-
-          <!-- 36氪收藏榜 -->
-          <div class="layui-col-md3">
-              <div class="layui-card">
-                <div class="layui-card-header">
-                  <img class="sm-img" src="/static/img/txnews.png">
-                  <font size="3" color="#393D49"><b> 腾讯新闻</b></font>
-                </div>
-                <div class="layui-card-body" id = "txnewscard">
-                  <ul id="txnews"></ul>
-                </div>
-              </div>
-          </div>
-
-          <!-- 少数派 -->
-          <div class="layui-col-md3">
-              <div class="layui-card">
-                <div class="layui-card-header">
-                  <img class="sm-img" src="/static/img/sspai.png">
-                  <font size="3" color="#393D49"><b> 少数派</b></font>
-                </div>
-                <div class="layui-card-body" id = "3sspaicard">
-                  <ul id="sspai"></ul>
-                </div>
-              </div>
-          </div>
-    </div>
-  </div>
-</div>
-<!-- 第四行 -->
+<!-- 第五行 -->
 <div style="padding: 15px; background-color: #F2F2F2;">
   <div class="layui-fluid">
     <div class="layui-row layui-col-space10">
@@ -254,7 +312,7 @@
     </div>
   </div>
 </div>
-<!-- 第五行 -->
+<!-- 第六行 -->
 <div style="padding: 15px; background-color: #F2F2F2;">
     <div class="layui-fluid">
         <div class="layui-row layui-col-space10">
@@ -272,16 +330,17 @@
             </div>
             <!-- 吾爱破解 -->
             <div class="layui-col-md3">
-            <div class="layui-card">
-              <div class="layui-card-header">
-                <img class="sm-img" src="/static/img/wuai.png">
-                <font size="3" color="#393D49"><b> 吾爱破解</b></font>
-              </div>
-              <div class="layui-card-body" id="wuaicard">
-                <ul id="wuai"></ul>
-              </div>
+                <div class="layui-card">
+                    <div class="layui-card-header">
+                        <img class="sm-img" src="/static/img/wuai.png">
+                        <font size="3" color="#393D49"><b> 吾爱破解</b></font>
+                    </div>
+                    <div class="layui-card-body" id="wuaicard">
+                        <ul id="wuai"></ul>
+                    </div>
+                </div>
             </div>
-          </div>
+
             <!-- 豆瓣新片 -->
             <div class="layui-col-md3">
             <div class="layui-card">
@@ -294,7 +353,6 @@
               </div>
             </div>
           </div>
-
         </div>
     </div>
 </div>

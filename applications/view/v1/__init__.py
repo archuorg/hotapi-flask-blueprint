@@ -12,9 +12,13 @@ from applications.view.v1.csdn import bp as csdn_bp
 from applications.view.v1.hupu import bp as hupu_bp
 from applications.view.v1.smzdm import bp as smzdm_bp
 from applications.view.v1.history import bp as history_bp
-# from applications.view.v1.36kr import bp as 36krzonghe_bp
+
+from applications.view.v1.toutiao import bp as toutiao_bp
+from applications.view.v1.txnews import bp as txnews_bp
+from applications.view.v1.neteasenews import bp as neteasenews_bp
+from applications.view.v1.thepaper import bp as thepaper_bp
+
 from applications.view.v1.krrenqi import bp as kr_renqi_bp
-# from applications.view.v1.36krshoucang import bp as 36krshoucang_bp
 from applications.view.v1.sspai import bp as sspai_bp
 from applications.view.v1.douyin import bp as douyin_bp
 from applications.view.v1.bilibilihot import bp as bilibilihot_bp
@@ -23,7 +27,7 @@ from applications.view.v1.acfun import bp as acfun_bp
 from applications.view.v1.ghbk import bp as ghbk_bp
 from applications.view.v1.wuai import bp as wuai_bp
 from applications.view.v1.douban import bp as douban_bp
-from applications.view.v1.txnews import bp as txnews_bp
+
 from applications.view.v1.juejin import bp as juejin_bp
 from applications.view.v1.ithome import bp as ithome_bp
 
@@ -43,9 +47,13 @@ def register_system_bps(app: Flask):
     v1_bp.register_blueprint(hupu_bp)
     v1_bp.register_blueprint(smzdm_bp)
     v1_bp.register_blueprint(history_bp)
-    # v1_bp.register_blueprint(ghbk_bp)
+
+    v1_bp.register_blueprint(toutiao_bp)
+    v1_bp.register_blueprint(txnews_bp)
+    v1_bp.register_blueprint(neteasenews_bp)
+    v1_bp.register_blueprint(thepaper_bp)
+
     v1_bp.register_blueprint(kr_renqi_bp)
-    # v1_bp.register_blueprint(ghbk_bp)
     v1_bp.register_blueprint(sspai_bp)
     v1_bp.register_blueprint(douyin_bp)
     v1_bp.register_blueprint(bilibilihot_bp)
@@ -54,7 +62,7 @@ def register_system_bps(app: Flask):
     v1_bp.register_blueprint(ghbk_bp)
     v1_bp.register_blueprint(wuai_bp)
     v1_bp.register_blueprint(douban_bp)
-    v1_bp.register_blueprint(txnews_bp)
+
     v1_bp.register_blueprint(juejin_bp)
     v1_bp.register_blueprint(ithome_bp)
 

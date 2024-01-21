@@ -2,8 +2,9 @@
 
 var site_list=new Array(
 "zhihu","weibo","baidu","tieba",
+"toutiao","txnews","neteasenews","thepaper",
 "csdn","hupu","smzdm","history",
-"krrenqi","sspai","ithome","txnews",
+"krrenqi","sspai","ithome","juejin",
 "douyin","bilibiliday","bilibilihot","acfun",
 "ghbk","wuai","douban",
 );
