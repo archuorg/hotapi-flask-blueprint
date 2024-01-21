@@ -21,7 +21,8 @@ def wuai():
             'Connection': 'close'
         }
 
-        request = helper.get_html("https://www.52pojie.cn/forum.php?mod=guide&view=hot", headers, "html", proxy_ip=None) # 这里没有使用代理ip ：proxy_ip=None
+        request = helper.get_html("https://www.52"
+                                  "pojie.cn/forum.php?mod=guide&view=hot", headers, "html", proxy_ip=None) # 这里没有使用代理ip ：proxy_ip=None
         if request == 1:
             return file_content
         articles_title = request.xpath('/html/body/div[6]/div[2]/div/div/div[3]/div[2]/table/tbody/tr/th/a[1]/text()')
