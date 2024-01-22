@@ -7,6 +7,14 @@
     <title>Archu热榜 - 你爱的，才是热榜！</title>
     <script src="/static/layui/layui.js"></script>
     <script src="/static/js/render.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MMZD4NDQK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2MMZD4NDQK');
+    </script>
     <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/webkit.css">
@@ -301,7 +309,7 @@
           <div class="layui-col-md3">
             <div class="layui-card">
               <div class="layui-card-header">
-                <img class="sm-img" src="static/img/acfun.png">
+                <img class="sm-img" src="/static/img/acfun.png">
                 <font size="3" color="#393D49"><b> A站热榜</b></font>
               </div>
               <div class="layui-card-body" id="acfuncard">
