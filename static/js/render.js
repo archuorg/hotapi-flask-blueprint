@@ -16,7 +16,7 @@ function render(elem_name, limit_num) {
         var flow = layui.flow;
 
         flow.load({
-            url: api_hot + elem_name + "/",    // 指定列表容器
+            elem: "#" + elem_name, // 指定列表容器
             end: "没有更多了",
             scrollElem: "#" + elem_name + "card", // 滚动条元素
             mb: 30,
@@ -25,7 +25,7 @@ function render(elem_name, limit_num) {
 
                 // 使用 jQuery 的 Ajax 请求数据
                 $.ajax({
-                    url: api_hot + elem_name,
+                    url: api_hot + elem_name +'/',
                     method: 'GET',
                     dataType: 'json',
                     success: function (res) {

@@ -31,5 +31,5 @@ def index():
     set_visit_count(visit_count)
 
     # 渲染名为 'index.html' 的模板，并返回渲染后的内容
-    return render_template('/index.html', visit_count=visit_count)
+    return render_template('hotapi/index.html', visit_count=visit_count)
 
