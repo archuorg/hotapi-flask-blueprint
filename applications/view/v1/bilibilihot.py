@@ -8,7 +8,7 @@ bp = Blueprint('bilibilihot', __name__, url_prefix='/bilibilihot')
 
 @bp.get('/')
 def bilibilihot():
-    filename = "bilibilihot_*.data"
+    filename = "bilibilihot_data_*.data"
     file_content = helper.get_file_data(filename)
     if file_content is None:
         json_data = helper.init_json_data("bilibili热搜榜")

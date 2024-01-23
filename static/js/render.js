@@ -56,10 +56,10 @@ function render(elem_name, limit_num) {
                               break;
                         }
                        }else{
-                        var strnum = "<font color='#009688'>"+num3+"      "+"</font>";
-
-                        var str_all = '<li>'+"<a target='_blank' href='"+item.url+"'"+strnum+item.title+'</a></li>';
-                        lis.push(str_all);
+                            // 设置序号的格式 宽高背景颜色以及对齐方式
+                            var strnum = "<span style='width:32px;height:18px;border-radius:4px;background:rgba(124,124,124,.3);display:inline-block;text-align:center;line-height:18px;'>" + num3 + "</span>";
+                            var str_all = '<li><a target="_blank" href="' + item.url + '">' + strnum + ' ' + item.title + '</a></li>';
+                            lis.push(str_all);
                        }
                       });
 

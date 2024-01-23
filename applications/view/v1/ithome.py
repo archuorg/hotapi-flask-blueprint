@@ -8,7 +8,7 @@ bp = Blueprint('ithome', __name__, url_prefix='/ithome')
 
 @bp.get('/')
 def ithome():
-    filename = "ithome_*.data"
+    filename = "ithome_data_*.data"
     file_content = helper.get_file_data(filename)
     if file_content is None:
         json_data = helper.init_json_data("IT资讯最新")

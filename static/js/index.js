@@ -6,7 +6,8 @@ var site_list=new Array(
 "csdn","hupu","smzdm","history",
 "krrenqi","sspai","ithome","juejin",
 "douyin","bilibiliday","bilibilihot","acfun",
-"ghbk","wuai","douban",
+"ghbk","wuai","douban","qqmusic",
+"weread",
 );
 //元素名字，同时也是参数后name的值,limit_num 也即每次请求多少条数据
 

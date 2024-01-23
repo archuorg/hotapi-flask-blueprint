@@ -8,7 +8,7 @@ bp = Blueprint('txnews', __name__, url_prefix='/txnews')
 
 @bp.get('/')
 def txnews():
-    filename = "txnews_*.data"
+    filename = "txnews_data_*.data"
     file_content = helper.get_file_data(filename)
     if file_content is None:
         json_data = helper.init_json_data("腾讯新闻")

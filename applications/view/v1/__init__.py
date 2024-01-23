@@ -31,6 +31,10 @@ from applications.view.v1.douban import bp as douban_bp
 from applications.view.v1.juejin import bp as juejin_bp
 from applications.view.v1.ithome import bp as ithome_bp
 
+from applications.view.v1.qqmusic import bp as qqmusic_bp
+from applications.view.v1.weread import bp as weread_bp
+
+
 
 
 # 创建一个名为'v1_bp'的新蓝图，其URL前缀为'/v1'
@@ -65,6 +69,9 @@ def register_system_bps(app: Flask):
 
     v1_bp.register_blueprint(juejin_bp)
     v1_bp.register_blueprint(ithome_bp)
+
+    v1_bp.register_blueprint(qqmusic_bp)
+    v1_bp.register_blueprint(weread_bp)
 
     # 使用Flask应用注册'v1_bp'蓝图
     app.register_blueprint(v1_bp)
