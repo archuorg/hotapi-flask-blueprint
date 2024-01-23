@@ -8,6 +8,7 @@ layui.use('element', function () {
 });
 
 // 接口地址
+// var api_hot = "https://hot.archu.org/v1/";
 var api_hot = "http://127.0.0.1:5000/v1/";
 
 function render(elem_name, limit_num) {
@@ -42,7 +43,7 @@ function render(elem_name, limit_num) {
                           var img_1 = "<img src='static/img/no1.png' width='32' height='18'>"
                           var img_2 = "<img src='static/img/no2.png' width='32' height='18'>"
                           var img_3 = "<img src='static/img/no3.png' width='32' height='18'>"
-                          var str_left = '<li>'+"<a target='_blank' href='"+item.url+"'>";
+                          var str_left = '<li style="margin-bottom: 0.5rem!important;">'+"<a target='_blank' href='"+item.url+"'>";
                           var str_right = "    "+item.title+'</a></li>';
                           switch(num3){
                             case 1:
@@ -58,7 +59,7 @@ function render(elem_name, limit_num) {
                        }else{
                             // 设置序号的格式 宽高背景颜色以及对齐方式
                             var strnum = "<span style='width:32px;height:18px;border-radius:4px;background:rgba(124,124,124,.3);display:inline-block;text-align:center;line-height:18px;'>" + num3 + "</span>";
-                            var str_all = '<li><a target="_blank" href="' + item.url + '">' + strnum + ' ' + item.title + '</a></li>';
+                            var str_all = '<li style="margin-bottom: 0.5rem!important;"><a target="_blank" href="' + item.url + '">' + strnum + ' ' + item.title + '</a></li>';
                             lis.push(str_all);
                        }
                       });
